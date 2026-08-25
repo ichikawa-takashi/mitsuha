@@ -1,6 +1,151 @@
-.test{
-    font-size: rem(40);
-    @include mq('md'){
-        font-size: rem(20);
-    }
+.values {
+  overflow: hidden;
+  padding-top: rem(66);
+  padding-bottom: rem(58);
+
+  @include mq("md") {
+    padding-top: rem(48);
+    padding-bottom: rem(56);
+  }
+}
+
+.values__heading {
+  display: grid;
+  grid-template-columns: max-content rem(294) rem(243) max-content;
+  align-items: center;
+  column-gap: rem(22);
+  padding-right: rem(64);
+  padding-left: rem(64);
+
+  @include mq("md") {
+    grid-template-columns: auto 1fr;
+    column-gap: rem(12);
+    row-gap: rem(12);
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+.values__number {
+  @include font(40, 48, null, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(24, 29);
+  }
+}
+
+.values__title {
+  @include font(56, 67, null, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(38, 46);
+  }
+}
+
+.values__line {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #717171;
+
+  @include mq("md") {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+.values__heading-ja {
+  @include font(24, 34, 20, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(17, 28);
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+}
+
+.values__body {
+  display: grid;
+  grid-template-columns: 54.2% 45.8%;
+  padding-top: rem(48);
+  padding-right: rem(32);
+  padding-left: rem(64);
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    row-gap: rem(30);
+    padding-top: rem(44);
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+.values__lead {
+  @include font(40, 48, null, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(28, 40);
+  }
+}
+
+.values__copy {
+  color: #717171;
+  padding-left: rem(6);
+
+  @include mq("md") {
+    padding-left: 0;
+  }
+}
+
+.values__copy-ja {
+  @include font(15, 28, 20, $light);
+
+  @include mq("md") {
+    @include font(15, 29);
+  }
+}
+
+.values__copy-en {
+  @include font(12, 23, 5, $light);
+  padding-top: rem(14);
+
+  @include mq("md") {
+    padding-top: rem(18);
+  }
+}
+
+.values__break-pc {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.values__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(3);
+  padding-top: rem(36);
+  padding-right: rem(5);
+  padding-left: rem(5);
+
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: rem(40);
+    padding-right: rem(3);
+    padding-left: rem(3);
+  }
+}
+
+.values__image {
+  overflow: hidden;
+  aspect-ratio: 683 / 496;
+}
+
+.values__image img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }

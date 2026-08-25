@@ -201,6 +201,10 @@ html {
   //inner~max-screen
   font-size: 16px;
 
+  @media (min-width: 1281px) {
+    font-size: vw(strip-unit($inner), 16);
+  }
+
   //inner~768px
   @media (max-width: $inner) {
     font-size: vw(strip-unit($inner), 16);
