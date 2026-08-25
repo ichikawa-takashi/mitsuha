@@ -149,3 +149,467 @@
   min-height: 100%;
   object-fit: cover;
 }
+
+.mission {
+  color: $white;
+  background-image: url("../img/mission-vision-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: rem(34);
+  padding-right: rem(59);
+  padding-bottom: rem(40);
+  padding-left: rem(59);
+
+  @include mq("md") {
+    background-position: 42% center;
+    padding-top: rem(45);
+    padding-right: $padding-sp;
+    padding-bottom: rem(45);
+    padding-left: $padding-sp;
+  }
+}
+
+.mission__heading {
+  display: grid;
+  grid-template-columns: max-content rem(430) rem(114) max-content;
+  align-items: center;
+  column-gap: rem(22);
+
+  @include mq("md") {
+    grid-template-columns: auto 1fr;
+    column-gap: rem(12);
+    row-gap: rem(12);
+  }
+}
+
+.mission__number {
+  @include font(40, 48, null, $light);
+
+  @include mq("md") {
+    @include font(24, 29);
+  }
+}
+
+.mission__title {
+  @include font(54, 65, null, $light);
+
+  @include mq("md") {
+    @include font(36, 44);
+  }
+}
+
+.mission__line {
+  display: block;
+  width: 100%;
+  border-top: 1px solid currentColor;
+
+  @include mq("md") {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+.mission__heading-ja {
+  @include font(22, 32, 20, $light);
+
+  @include mq("md") {
+    @include font(17, 28);
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+}
+
+.mission__lead {
+  @include font(38, 48, null, $light);
+  padding-top: rem(27);
+
+  @include mq("md") {
+    @include font(27, 39);
+    padding-top: rem(38);
+  }
+}
+
+.mission__body {
+  display: grid;
+  grid-template-columns: 52.4% 47.6%;
+  padding-top: rem(14);
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    row-gap: rem(38);
+    padding-top: rem(34);
+  }
+}
+
+.mission__summary {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(31);
+  padding-top: rem(263);
+
+  @include mq("md") {
+    row-gap: rem(30);
+    padding-top: 0;
+  }
+}
+
+.mission__label {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: rem(16);
+  width: 100%;
+  max-width: rem(490);
+  border-radius: rem(18);
+  background: linear-gradient(90deg, rgba(59, 165, 191, 0.86), rgba(104, 190, 85, 0.86));
+  padding-top: rem(5);
+  padding-right: rem(43);
+  padding-bottom: rem(5);
+  padding-left: rem(25);
+
+  @include mq("md") {
+    column-gap: rem(8);
+    border-radius: rem(14);
+    padding-right: rem(14);
+    padding-left: rem(16);
+  }
+}
+
+.mission__label-text {
+  @include font(30, 40, null, $light);
+  white-space: nowrap;
+
+  @include mq("md") {
+    @include font(20, 30);
+  }
+}
+
+.mission__label-icon {
+  display: grid;
+  place-items: center;
+  width: rem(42);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.72);
+
+  @include mq("md") {
+    width: rem(32);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    border-top: rem(10) solid transparent;
+    border-bottom: rem(10) solid transparent;
+    border-left: rem(16) solid #58a8ae;
+    margin-left: rem(4);
+  }
+}
+
+.mission__copy-en {
+  @include font(12, 24, 5, $light);
+  max-width: rem(510);
+
+  @include mq("md") {
+    @include font(12, 22);
+    max-width: none;
+  }
+}
+
+.mission__copy-ja {
+  @include font(15, 28, 20, $light);
+  padding-left: rem(26);
+
+  @include mq("md") {
+    @include font(15, 28);
+    padding-left: 0;
+  }
+}
+
+.mission__paragraph {
+  & + & {
+    margin-top: rem(30);
+  }
+}
+
+.mission__break-pc {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.projects {
+  padding-top: rem(34);
+  padding-bottom: rem(3);
+
+  @include mq("md") {
+    padding-top: rem(48);
+  }
+}
+
+.projects__heading {
+  display: grid;
+  grid-template-columns: max-content rem(405) rem(243) max-content;
+  align-items: center;
+  column-gap: rem(22);
+  padding-right: rem(64);
+  padding-left: rem(64);
+
+  @include mq("md") {
+    grid-template-columns: auto 1fr;
+    column-gap: rem(12);
+    row-gap: rem(12);
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+.projects__number {
+  @include font(40, 48, null, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(24, 29);
+  }
+}
+
+.projects__title {
+  @include font(56, 67, null, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(38, 46);
+  }
+}
+
+.projects__line {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #717171;
+
+  @include mq("md") {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+.projects__heading-ja {
+  @include font(24, 34, 20, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(17, 28);
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+}
+
+.projects__intro {
+  display: grid;
+  grid-template-columns: 55.5% 44.5%;
+  padding-top: rem(52);
+  padding-right: rem(64);
+  padding-left: rem(64);
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    row-gap: rem(30);
+    padding-top: rem(44);
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+.projects__lead {
+  @include font(40, 48, null, $light);
+  color: #717171;
+
+  @include mq("md") {
+    @include font(27, 39);
+  }
+}
+
+.projects__copy {
+  color: #717171;
+}
+
+.projects__copy-ja {
+  @include font(15, 28, 20, $light);
+}
+
+.projects__copy-en {
+  @include font(12, 23, 5, $light);
+  padding-top: rem(27);
+}
+
+.projects__break-pc {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.projects__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(3);
+  padding-top: rem(36);
+  padding-right: rem(5);
+  padding-left: rem(5);
+
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: rem(45);
+    padding-right: rem(3);
+    padding-left: rem(3);
+  }
+}
+
+.projects__item {
+  display: grid;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.projects__image {
+  grid-area: 1 / 1;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.projects__open {
+  grid-area: 1 / 1;
+  align-self: end;
+  justify-self: end;
+  width: rem(54);
+  aspect-ratio: 1;
+  margin-right: rem(18);
+  margin-bottom: rem(18);
+  transition: transform 0.3s ease;
+
+  @include mq("md") {
+    width: rem(42);
+    margin-right: rem(8);
+    margin-bottom: rem(8);
+  }
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.project-modal {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  padding: rem(40);
+
+  @include mq("md") {
+    align-items: start;
+    padding: rem(20) $padding-sp;
+  }
+}
+
+.project-modal[hidden] {
+  display: none;
+}
+
+.project-modal__backdrop {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.48);
+}
+
+.project-modal__panel {
+  position: relative;
+  width: min(84vw, rem(1080));
+  background-color: $white;
+  padding: rem(7);
+
+  @include mq("md") {
+    width: 100%;
+    padding: rem(7);
+  }
+}
+
+.project-modal__title {
+  @include font(16, 24, null, $regular);
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.project-modal__close {
+  @include font(34, 34, null, $light);
+  position: absolute;
+  z-index: 1;
+  top: rem(-18);
+  right: rem(-18);
+  display: grid;
+  place-items: center;
+  width: rem(40);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #5f5f5f;
+  background-color: $white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+
+  @include mq("md") {
+    top: rem(4);
+    right: rem(4);
+  }
+}
+
+.project-modal__comparison {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) rem(36) minmax(0, 1fr);
+  align-items: center;
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-modal__item {
+  min-width: 0;
+}
+
+.project-modal__image {
+  aspect-ratio: 1096 / 714;
+  object-fit: cover;
+}
+
+.project-modal__caption {
+  @include font(16, 24, null, $light);
+  color: #717171;
+  padding-left: rem(14);
+}
+
+.project-modal__arrow {
+  width: rem(20);
+  aspect-ratio: 1;
+  border-top: 1px solid #69b27b;
+  border-right: 1px solid #69b27b;
+  transform: rotate(45deg);
+  justify-self: center;
+
+  @include mq("md") {
+    margin-top: rem(4);
+    margin-bottom: rem(4);
+    transform: rotate(135deg);
+  }
+}
+
+html.is-modal-open,
+body.is-modal-open {
+  overflow: hidden;
+}
