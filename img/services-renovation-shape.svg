@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="971" height="721" viewBox="0 0 971 721">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_23" data-name="長方形 23" width="971" height="721" transform="translate(7649 3297)" fill="#fff" opacity="0.611"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="パス_14" data-name="パス 14" d="M463.671,38.983C-133.788,153.231,20.222-120.829,34.51,722.512s1552.4,656.533,1729.315,651.5S579.369,1497.187,693,842.165,1061.131-75.265,463.671,38.983Z" transform="translate(0)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#75b249"/>
+      <stop offset="1" stop-color="#227db6"/>
+    </linearGradient>
+  </defs>
+  <g id="マスクグループ_10" data-name="マスクグループ 10" transform="translate(-7649 -3297)" clip-path="url(#clip-path)">
+    <g id="マスクグループ_5" data-name="マスクグループ 5" transform="translate(7636.017 4143.333) rotate(-90)" opacity="0.799" clip-path="url(#clip-path-2)">
+      <path id="パス_15" data-name="パス 15" d="M837.281,1221.669S478.1,959.9,171.808,746.465,62.126,6.972,62.126,6.972s116.076-15.686,496.131,0S837.281,1221.669,837.281,1221.669Z" transform="translate(126.338 -42.395)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
