@@ -122,6 +122,7 @@ margin-bottom: rem(-20);
 .section-heading__line {
   display: block;
   width: rem(283);
+  flex-shrink: 0;
   border-top: 1px solid currentColor;
     margin-bottom: rem(-28);
   @include mq("md") {

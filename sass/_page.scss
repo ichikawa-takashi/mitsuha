@@ -1,305 +1,289 @@
 .values {
-  overflow: hidden;
-  padding-top: rem(66);
-  padding-bottom: rem(58);
+    overflow: hidden;
+    padding-top: rem(66);
+    padding-bottom: rem(58);
 
-  @include mq("md") {
-    padding-top: rem(48);
-    padding-bottom: rem(56);
-  }
+    @include mq("md") {
+        padding-top: rem(48);
+        padding-bottom: rem(56);
+    }
 }
 
 .values__body {
-display: flex;
-justify-content: space-between;
-  padding-top: rem(48);
-  padding-right: rem(32);
-  padding-left: rem(64);
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(48);
+    padding-right: rem(32);
+    padding-left: rem(64);
 
-  @include mq("md") {
-    grid-template-columns: 1fr;
-    row-gap: rem(30);
-    padding-top: rem(44);
-    padding-right: $padding-sp;
-    padding-left: $padding-sp;
-  }
+    @include mq("md") {
+        grid-template-columns: 1fr;
+        row-gap: rem(30);
+        padding-top: rem(44);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
 }
 
 .values__lead {
-  @include font(40, 60, null, $regular);
+    @include font(40, 60, null, $regular);
 
-  @include mq("md") {
-    @include font(28, 40);
-  }
+    @include mq("md") {
+        @include font(28, 40);
+    }
 }
 
-.values__copy {
-  padding-left: rem(6);
-
-  @include mq("md") {
-    padding-left: 0;
-  }
-}
+.values__copy {}
 
 .values__copy-ja {
-  @include font(17, 30, 0, $regular);
+    @include font(17, 30, 0, $regular);
 
-  @include mq("md") {
-    @include font(15, 29);
-  }
+    @include mq("md") {
+        @include font(15, 29);
+    }
 }
 
 .values__copy-en {
-  @include font(12, 23, 0, $regular);
-  padding-top: rem(14);
+    @include font(12, 23, 0, $regular);
+    padding-top: rem(14);
 
-  @include mq("md") {
-    padding-top: rem(18);
-  }
+    @include mq("md") {
+        padding-top: rem(18);
+    }
 }
 
 .values__break-pc {
-  @include mq("md") {
-    display: none;
-  }
+    @include mq("md") {
+        display: none;
+    }
 }
 
 .values__gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding-top: rem(36);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: rem(36);
 
-  @include mq("md") {
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: rem(40);
-    padding-right: rem(3);
-    padding-left: rem(3);
-  }
+    @include mq("md") {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: rem(40);
+        padding-right: rem(3);
+        padding-left: rem(3);
+    }
 }
 
 .values__image {
-  overflow: hidden;
-  aspect-ratio: 683 / 496;
+    overflow: hidden;
+    aspect-ratio: 683 / 496;
 }
 
 .values__image img {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .mission {
-  color: $white;
-  background-image: url("../img/mission-vision-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: rem(34);
-  padding-right: rem(59);
-  padding-bottom: rem(40);
-  padding-left: rem(59);
+    color: $white;
+    background-image: url("../img/mission-vision-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(34);
+    padding-right: rem(59);
+    padding-bottom: rem(40);
+    padding-left: rem(59);
 
-  @include mq("md") {
-    background-position: 42% center;
-    padding-top: rem(45);
-    padding-right: $padding-sp;
-    padding-bottom: rem(45);
-    padding-left: $padding-sp;
-  }
+    @include mq("md") {
+        background-position: 42% center;
+        padding-top: rem(45);
+        padding-right: $padding-sp;
+        padding-bottom: rem(45);
+        padding-left: $padding-sp;
+    }
 }
 
 .mission__lead {
-  @include font(40, 80, null, $regular);
-  padding-top: rem(27);
+    @include font(40, 80, null, $regular);
+    padding-top: rem(27);
 
-  @include mq("md") {
-    @include font(27, 39);
-    padding-top: rem(38);
-  }
+    @include mq("md") {
+        @include font(27, 39);
+        padding-top: rem(38);
+    }
 }
 
 .mission__body {
-  display: grid;
-  grid-template-columns: 52.4% 47.6%;
-  padding-top: rem(14);
+    display: grid;
+    grid-template-columns: 52.4% 47.6%;
+    padding-top: rem(14);
 
-  @include mq("md") {
-    grid-template-columns: 1fr;
-    row-gap: rem(38);
-    padding-top: rem(34);
-  }
+    @include mq("md") {
+        grid-template-columns: 1fr;
+        row-gap: rem(38);
+        padding-top: rem(34);
+    }
 }
 
 .mission__summary {
-  display: flex;
-  flex-direction: column;
-  row-gap: rem(31);
-  padding-top: rem(263);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(31);
+    padding-top: rem(263);
 
-  @include mq("md") {
-    row-gap: rem(30);
-    padding-top: 0;
-  }
+    @include mq("md") {
+        row-gap: rem(30);
+        padding-top: 0;
+    }
 }
 
 .mission__label {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  column-gap: rem(16);
-  width: 100%;
-  max-width: rem(490);
-  border-radius: rem(18);
-  background: linear-gradient(90deg, rgba(59, 165, 191, 0.86), rgba(104, 190, 85, 0.86));
-  padding-top: rem(5);
-  padding-right: rem(43);
-  padding-bottom: rem(5);
-  padding-left: rem(25);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: rem(16);
+    width: 100%;
+    max-width: rem(530);
+    border-radius: rem(20);
+    background: linear-gradient(90deg, rgba(59, 165, 191, 0.86), rgba(104, 190, 85, 0.86));
+    padding-top: rem(5);
+    padding-right: rem(43);
+    padding-bottom: rem(5);
+    padding-left: rem(25);
 
-  @include mq("md") {
-    column-gap: rem(8);
-    border-radius: rem(14);
-    padding-right: rem(14);
-    padding-left: rem(16);
-  }
+    @include mq("md") {
+        column-gap: rem(8);
+        border-radius: rem(14);
+        padding-right: rem(14);
+        padding-left: rem(16);
+    }
 }
 
 .mission__label-text {
-  @include font(30, 40, null, $light);
-  white-space: nowrap;
+    @include font(33, 40, null, $regular);
+    white-space: nowrap;
 
-  @include mq("md") {
-    @include font(20, 30);
-  }
+    @include mq("md") {
+        @include font(20, 30);
+    }
 }
 
 .mission__label-icon {
-  display: grid;
-  place-items: center;
-  width: rem(42);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.72);
+    background-image: url(../img/button-arrow.svg);
+    width: rem(47);
+    height: rem(47);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  @include mq("md") {
-    width: rem(32);
-  }
+    @include mq("md") {
+        width: rem(32);
+    }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 0;
-    border-top: rem(10) solid transparent;
-    border-bottom: rem(10) solid transparent;
-    border-left: rem(16) solid #58a8ae;
-    margin-left: rem(4);
-  }
 }
 
 .mission__copy-en {
-  @include font(12, 24, 5, $light);
-  max-width: rem(510);
+    @include font(12, 24, 5, $light);
+    max-width: rem(510);
 
-  @include mq("md") {
-    @include font(12, 22);
-    max-width: none;
-  }
+    @include mq("md") {
+        @include font(12, 22);
+        max-width: none;
+    }
 }
 
 .mission__copy-ja {
-  @include font(15, 28, 20, $light);
-  padding-left: rem(26);
+    @include font(17, 30, 0, $light);
 
-  @include mq("md") {
-    @include font(15, 28);
-    padding-left: 0;
-  }
+    @include mq("md") {
+        @include font(15, 28);
+        padding-left: 0;
+    }
 }
 
 .mission__paragraph {
-  & + & {
-    margin-top: rem(30);
-  }
+    &+& {
+        margin-top: rem(30);
+    }
 }
 
 .mission__break-pc {
-  @include mq("md") {
-    display: none;
-  }
+    @include mq("md") {
+        display: none;
+    }
 }
 
 .services {
-  overflow: hidden;
-  padding-top: rem(66);
+    overflow: hidden;
+    padding-top: rem(66);
 
-  @include mq("md") {
-    padding-top: rem(48);
-  }
+    @include mq("md") {
+        padding-top: rem(48);
+    }
 }
 
 .services__lead {
-  color: #717171;
-  padding-top: rem(52);
-  padding-right: rem(64);
-  padding-left: rem(64);
+    color: #717171;
+    padding-top: rem(52);
+    padding-right: rem(64);
+    padding-left: rem(64);
 
-  @include mq("md") {
-    padding-top: rem(40);
-    padding-right: $padding-sp;
-    padding-left: $padding-sp;
-  }
+    @include mq("md") {
+        padding-top: rem(40);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
 }
 
 .services__lead-ja {
-  @include font(40, 52, null, $light);
+    @include font(40, 52, null, $regular);
 
-  @include mq("md") {
-    @include font(27, 40);
-  }
+    @include mq("md") {
+        @include font(27, 40);
+    }
 }
 
 .services__lead-en {
-  @include font(24, 36, 5, $light);
-  padding-top: rem(8);
+    @include font(27, 45);
+    padding-top: rem(8);
 
-  @include mq("md") {
-    @include font(15, 25);
-    padding-top: rem(10);
-  }
+    @include mq("md") {
+        @include font(15, 25);
+        padding-top: rem(10);
+    }
 }
 
 .services__showcase {
-  display: grid;
-  padding-top: rem(38);
+    display: grid;
+    padding-top: rem(38);
 
-  @include mq("md") {
-    padding-top: rem(30);
-  }
+    @include mq("md") {
+        padding-top: rem(30);
+    }
 }
 
 .services__panels,
 .services__tabs {
-  grid-area: 1 / 1;
+    grid-area: 1 / 1;
 }
 
 .services__panels {
-  display: grid;
+    display: grid;
 }
 
 .services__panel {
-  grid-area: 1 / 1;
-  display: grid;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    grid-area: 1 / 1;
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
 }
 
 .services__panel.is-active {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-  transition-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0s;
 }
 
 .services__shape,
@@ -307,730 +291,735 @@ justify-content: space-between;
 .services__renovation-gallery,
 .services__vertical-label,
 .services__card {
-  grid-area: 1 / 1;
+    grid-area: 1 / 1;
 }
 
 .services__shape {
-  align-self: start;
-  pointer-events: none;
+    align-self: start;
+    pointer-events: none;
 }
 
 .services__shape--plumbing {
-  width: 53%;
-  justify-self: start;
+    width: 53%;
+    justify-self: start;
 
-  @include mq("md") {
-    width: 100%;
-  }
+    @include mq("md") {
+        width: 100%;
+    }
 }
 
 .services__shape--renovation {
-  width: 57%;
-  justify-self: end;
+    width: 57%;
+    justify-self: end;
 
-  @include mq("md") {
-    width: 100%;
-  }
+    @include mq("md") {
+        width: 100%;
+    }
 }
 
 .services__collage,
 .services__renovation-gallery {
-  align-self: start;
-  width: calc(100% - rem(117));
-  aspect-ratio: 2490 / 1488;
-  margin-top: rem(118);
-  margin-left: rem(117);
+    align-self: start;
+    width: calc(100% - rem(117));
+    aspect-ratio: 2490 / 1488;
+    margin-top: rem(118);
+    margin-left: rem(117);
 
-  @include mq("md") {
-    width: 100%;
-    margin-top: rem(130);
-    margin-left: 0;
-  }
+    @include mq("md") {
+        width: 100%;
+        margin-top: rem(130);
+        margin-left: 0;
+    }
 }
 
 .services__collage {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .services__renovation-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
 }
 
 .services__renovation-gallery img {
-  min-height: 100%;
-  object-fit: cover;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .services__vertical-label {
-  @include font(28, 38, null, $light);
-  align-self: start;
-  justify-self: start;
-  display: flex;
-  align-items: center;
-  column-gap: rem(20);
-  writing-mode: vertical-rl;
-  color: $white;
-  margin-top: rem(130);
-  margin-left: rem(50);
+    @include font(28, 38, null, $light);
+    align-self: start;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+    writing-mode: vertical-rl;
+    color: $white;
+    margin-top: rem(130);
+    margin-left: rem(50);
 
-  @include mq("md") {
-    display: none;
-  }
+    @include mq("md") {
+        display: none;
+    }
 }
 
 .services__vertical-label span {
-  display: block;
-  border-left: 1px solid currentColor;
-  padding-top: rem(80);
+    display: block;
+    border-left: 1px solid currentColor;
+    padding-top: rem(80);
 }
 
 .services__vertical-label--dark {
-  color: #717171;
+    color: #717171;
 }
 
 .services__card {
-  align-self: start;
-  width: rem(648);
-  color: $white;
-  background: linear-gradient(135deg, rgba(63, 153, 167, 0.68), rgba(114, 177, 75, 0.68));
-  margin-top: rem(253);
-  margin-left: rem(387);
-  padding-top: rem(22);
-  padding-right: rem(48);
-  padding-bottom: rem(24);
-  padding-left: rem(48);
+    align-self: start;
+    width: rem(648);
+    color: $white;
+    background: linear-gradient(135deg, rgba(63, 153, 167, 0.68), rgba(114, 177, 75, 0.68));
+    margin-top: rem(253);
+    margin-left: rem(387);
+    padding-top: rem(22);
+    padding-right: rem(48);
+    padding-bottom: rem(24);
+    padding-left: rem(48);
 
-  @include mq("md") {
-    width: 100%;
-    margin-top: rem(300);
-    margin-left: 0;
-    padding: rem(24) $padding-sp rem(30);
-  }
+    @include mq("md") {
+        width: 100%;
+        margin-top: rem(300);
+        margin-left: 0;
+        padding: rem(24) $padding-sp rem(30);
+    }
 }
 
 .services__card-title {
-  @include font(28, 40, null, $light);
+    @include font(28, 40, null, $light);
 
-  @include mq("md") {
-    @include font(22, 32);
-  }
+    @include mq("md") {
+        @include font(22, 32);
+    }
 }
 
 .services__card-summary {
-  @include font(15, 28, null, $light);
-  padding-top: rem(18);
+    @include font(15, 28, null, $light);
+    padding-top: rem(18);
 }
 
 .services__card-copy {
-  @include font(15, 28, null, $light);
-  padding-top: rem(28);
+    @include font(15, 28, null, $light);
+    padding-top: rem(28);
 }
 
 .services__card-copy p {
-  & + & {
-    margin-top: rem(28);
-  }
+    &+& {
+        margin-top: rem(28);
+    }
 }
 
 .services__card-copy strong {
-  font-weight: $regular;
+    font-weight: $regular;
 }
 
 .services__card-copy--renovation {
-  padding-top: rem(20);
+    padding-top: rem(20);
 }
 
 .services__tabs {
-  z-index: 2;
-  display: grid;
-  grid-template-columns: rem(390) rem(220);
-  column-gap: rem(55);
-  align-self: start;
-  width: rem(665);
-  margin-left: rem(126);
-  padding-top: rem(45);
+    z-index: 2;
+    display: grid;
+    grid-template-columns: rem(390) rem(220);
+    column-gap: rem(55);
+    align-self: start;
+    width: rem(665);
+    margin-left: rem(126);
+    padding-top: rem(45);
 
-  @include mq("md") {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: rem(18);
-    width: 100%;
-    margin-left: 0;
-    padding: rem(25) $padding-sp 0;
-  }
+    @include mq("md") {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: rem(18);
+        width: 100%;
+        margin-left: 0;
+        padding: rem(25) $padding-sp 0;
+    }
 }
 
 .services__tab {
-  color: #111111;
-  text-align: left;
-  transition: color 0.5s ease, opacity 0.3s ease;
+    color: #111111;
+    text-align: left;
+    transition: color 0.5s ease, opacity 0.3s ease;
 
-  &:hover {
-    opacity: 0.72;
-  }
+    &:hover {
+        opacity: 0.72;
+    }
 }
 
 .services__tab.is-active {
-  color: $white;
+    color: $white;
 }
 
 .services__tab-en,
 .services__tab-ja {
-  display: block;
+    display: block;
 }
 
 .services__tab-en {
-  @include font(20, 28, null, $light);
+    @include font(20, 28, null, $light);
 
-  @include mq("md") {
-    @include font(11, 18);
-  }
+    @include mq("md") {
+        @include font(11, 18);
+    }
 }
 
 .services__tab-ja {
-  @include font(28, 40, null, $light);
-  width: fit-content;
-  border-bottom: 1px dashed currentColor;
+    @include font(28, 40, null, $light);
+    width: fit-content;
+    border-bottom: 1px dashed currentColor;
 
-  @include mq("md") {
-    @include font(17, 28);
-  }
+    @include mq("md") {
+        @include font(17, 28);
+    }
 }
 
 .services__tab.is-active .services__tab-ja {
-  border-bottom-color: transparent;
+    border-bottom-color: transparent;
 }
 
 .projects {
-  padding-top: rem(34);
-  padding-bottom: rem(3);
+    padding-top: rem(60);
+    padding-bottom: rem(3);
 
-  @include mq("md") {
-    padding-top: rem(48);
-  }
+    @include mq("md") {
+        padding-top: rem(48);
+    }
 }
 
 .projects__intro {
-  display: grid;
-  grid-template-columns: 55.5% 44.5%;
-  padding-top: rem(52);
-  padding-right: rem(64);
-  padding-left: rem(64);
+    display: grid;
+    grid-template-columns: 55.5% 44.5%;
+    padding-top: rem(52);
+    padding-right: rem(64);
+    padding-left: rem(64);
 
-  @include mq("md") {
-    grid-template-columns: 1fr;
-    row-gap: rem(30);
-    padding-top: rem(44);
-    padding-right: $padding-sp;
-    padding-left: $padding-sp;
-  }
+    @include mq("md") {
+        grid-template-columns: 1fr;
+        row-gap: rem(30);
+        padding-top: rem(44);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
 }
 
 .projects__lead {
-  @include font(40, 48, null, $light);
-  color: #717171;
+    @include font(40, 48, 0, $regular);
 
-  @include mq("md") {
-    @include font(27, 39);
-  }
+    @include mq("md") {
+        @include font(27, 39);
+    }
 }
 
 .projects__copy {
-  color: #717171;
+    color: #717171;
 }
 
 .projects__copy-ja {
-  @include font(15, 28, 20, $light);
+    @include font(15, 28, 20, $light);
 }
 
 .projects__copy-en {
-  @include font(12, 23, 5, $light);
-  padding-top: rem(27);
+    @include font(12, 23, 5, $light);
+    padding-top: rem(27);
 }
 
 .projects__break-pc {
-  @include mq("md") {
-    display: none;
-  }
+    @include mq("md") {
+        display: none;
+    }
 }
 
 .projects__gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: rem(3);
-  padding-top: rem(36);
-  padding-right: rem(5);
-  padding-left: rem(5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(3);
+    padding-top: rem(36);
+    padding-right: rem(5);
+    padding-left: rem(5);
 
-  @include mq("md") {
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: rem(45);
-    padding-right: rem(3);
-    padding-left: rem(3);
-  }
+    @include mq("md") {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: rem(45);
+        padding-right: rem(3);
+        padding-left: rem(3);
+    }
 }
 
 .projects__item {
-  display: grid;
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
+    display: grid;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    position: relative;
 }
 
 .projects__image {
-  grid-area: 1 / 1;
-  min-height: 100%;
-  object-fit: cover;
+    grid-area: 1 / 1;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .projects__open {
-  grid-area: 1 / 1;
-  align-self: end;
-  justify-self: end;
-  width: rem(54);
-  aspect-ratio: 1;
-  margin-right: rem(18);
-  margin-bottom: rem(18);
-  transition: transform 0.3s ease;
+    position: absolute;
+    padding: 0;
+    width: rem(54);
+    height: rem(54);
+    display: block;
+    bottom: rem(18);
+    right: rem(18);
+    transition: transform 0.3s ease;
+    img{
+        width: 100%;
+        height: 100%;
+    }
 
-  @include mq("md") {
-    width: rem(42);
-    margin-right: rem(8);
-    margin-bottom: rem(8);
-  }
+    @include mq("md") {
+        width: rem(42);
+        margin-right: rem(8);
+        margin-bottom: rem(8);
+    }
 
-  &:hover {
-    transform: rotate(90deg);
-  }
+    &:hover {
+        transform: rotate(90deg);
+    }
 }
 
 .project-modal {
-  position: fixed;
-  z-index: 1000;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  overflow-y: auto;
-  padding: rem(40);
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+    padding: rem(40);
 
-  @include mq("md") {
-    align-items: start;
-    padding: rem(20) $padding-sp;
-  }
+    @include mq("md") {
+        align-items: start;
+        padding: rem(20) $padding-sp;
+    }
 }
 
 .project-modal[hidden] {
-  display: none;
+    display: none;
 }
 
 .project-modal__backdrop {
-  position: fixed;
-  z-index: -1;
-  inset: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.48);
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.48);
 }
 
 .project-modal__panel {
-  position: relative;
-  width: min(84vw, rem(1080));
-  background-color: $white;
-  padding: rem(7);
-
-  @include mq("md") {
-    width: 100%;
+    position: relative;
+    width: min(90vw, rem(1160));
+    background-color: $white;
     padding: rem(7);
-  }
+
+    @include mq("md") {
+        width: 100%;
+        padding: rem(7);
+    }
 }
 
 .project-modal__title {
-  @include font(16, 24, null, $regular);
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+    @include font(16, 24, null, $regular);
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
 }
 
 .project-modal__close {
-  @include font(34, 34, null, $light);
-  position: absolute;
-  z-index: 1;
-  top: rem(-18);
-  right: rem(-18);
-  display: grid;
-  place-items: center;
-  width: rem(40);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  color: #5f5f5f;
-  background-color: $white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
-
-  @include mq("md") {
-    top: rem(4);
-    right: rem(4);
-  }
+    @include font(34, 34, null, $light);
+    position: absolute;
+    z-index: 1;
+    top: rem(-18);
+    right: rem(-18);
+    display: grid;
+    place-items: center;
+    width: rem(40);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    color: #5f5f5f;
+    background-color: $white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+display: none;
+    @include mq("md") {
+        top: rem(4);
+        right: rem(4);
+    }
 }
 
 .project-modal__comparison {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) rem(36) minmax(0, 1fr);
-  align-items: center;
+    display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: rem(50);
+    align-items: center;
 
-  @include mq("md") {
-    grid-template-columns: 1fr;
-  }
+    @include mq("md") {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-modal__item {
-  min-width: 0;
+    min-width: 0;
 }
 
 .project-modal__image {
-  aspect-ratio: 1096 / 714;
-  object-fit: cover;
+    aspect-ratio: 548 / 357;
+    object-fit: cover;
 }
 
 .project-modal__caption {
-  @include font(16, 24, null, $light);
-  color: #717171;
-  padding-left: rem(14);
+    @include font(20, 24, null, $regular);
+    padding-left: rem(14);
 }
 
 .project-modal__arrow {
-  width: rem(20);
-  aspect-ratio: 1;
-  border-top: 1px solid #69b27b;
-  border-right: 1px solid #69b27b;
-  transform: rotate(45deg);
-  justify-self: center;
-
-  @include mq("md") {
-    margin-top: rem(4);
-    margin-bottom: rem(4);
-    transform: rotate(135deg);
-  }
+    width: rem(45);
+    aspect-ratio: 1;
+    border-top: 1px solid #83B97D;
+    border-right: 1px solid #83B97D;
+    justify-self: center;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    @include mq("md") {
+        margin-top: rem(4);
+        margin-bottom: rem(4);
+        transform: rotate(135deg);
+    }
 }
 
 html.is-modal-open,
 body.is-modal-open {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .sdgs {
-  color: $white;
-  background-image: url("../img/sdgs-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: rem(34);
-  padding-right: rem(59);
-  padding-bottom: rem(54);
-  padding-left: rem(59);
-
-  @include mq("md") {
-    background-position: 58% center;
-    padding-top: rem(45);
-    padding-right: $padding-sp;
-    padding-bottom: rem(45);
-    padding-left: $padding-sp;
-  }
+    color: $white;
+    background-image: url("../img/sdgs-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(34);
+    padding-right: rem(59);
+    padding-bottom: rem(54);
+    padding-left: rem(59);
+margin-top: rem(48);
+    @include mq("md") {
+        background-position: 58% center;
+        padding-top: rem(45);
+        padding-right: $padding-sp;
+        padding-bottom: rem(45);
+        padding-left: $padding-sp;
+    }
 }
 
 .sdgs__lead {
-  padding-top: rem(24);
+    padding-top: rem(24);
 
-  @include mq("md") {
-    padding-top: rem(38);
-  }
+    @include mq("md") {
+        padding-top: rem(38);
+    }
 }
 
 .sdgs__lead-ja {
-  @include font(36, 60, null, $light);
+    @include font(40, 60, null,$regular);
 
-  @include mq("md") {
-    @include font(26, 39);
-  }
+    @include mq("md") {
+        @include font(26, 39);
+    }
 }
 
 .sdgs__lead-line {
-  display: block;
+    display: block;
 }
 
 .sdgs__lead-en {
-  @include font(26, 34, null, $light);
-  padding-top: rem(5);
+    @include font(27, 34, null, $regular);
+    padding-top: rem(16);
 
-  @include mq("md") {
-    @include font(16, 27);
-    padding-top: rem(10);
-  }
+    @include mq("md") {
+        @include font(16, 27);
+        padding-top: rem(10);
+    }
 }
 
 .sdgs__body {
-  display: grid;
-  grid-template-columns: 54% 46%;
-  padding-top: rem(118);
+    display: grid;
+    grid-template-columns: 54% 46%;
+    align-items: flex-end;
+    padding-top: rem(118);
 
-  @include mq("md") {
-    grid-template-columns: 1fr;
-    row-gap: rem(30);
-    padding-top: rem(44);
-  }
+    @include mq("md") {
+        grid-template-columns: 1fr;
+        row-gap: rem(30);
+        padding-top: rem(44);
+    }
 }
 
 .sdgs__copy-en {
-  @include font(12, 20, 5, $light);
-  max-width: rem(525);
-  padding-top: rem(120);
+    @include font(12, 25, null, $regular);
+    max-width: rem(525);
 
-  @include mq("md") {
-    @include font(12, 22);
-    grid-row: 2;
-    max-width: none;
-    padding-top: 0;
-  }
+    @include mq("md") {
+        @include font(12, 22);
+        grid-row: 2;
+        max-width: none;
+        padding-top: 0;
+    }
 }
 
 .sdgs__copy-ja {
-  @include font(16, 28, 20, $light);
-  padding-left: rem(22);
+    @include font(17, 28,null, $light);
+    padding-left: rem(22);
 
-  @include mq("md") {
-    @include font(15, 28);
-    grid-row: 1;
-    padding-left: 0;
-  }
+    @include mq("md") {
+        @include font(15, 28);
+        grid-row: 1;
+        padding-left: 0;
+    }
 }
 
 .sdgs__paragraph {
-  & + & {
-    margin-top: rem(30);
-  }
+    &+& {
+        margin-top: rem(30);
+    }
 }
 
 .about {
-  padding-top: rem(55);
-  padding-right: rem(64);
-  padding-bottom: rem(62);
-  padding-left: rem(64);
+    padding-top: rem(55);
+    padding-right: rem(64);
+    padding-bottom: rem(62);
+    padding-left: rem(64);
 
-  @include mq("md") {
-    padding-top: rem(48);
-    padding-right: $padding-sp;
-    padding-bottom: rem(48);
-    padding-left: $padding-sp;
-  }
+    @include mq("md") {
+        padding-top: rem(48);
+        padding-right: $padding-sp;
+        padding-bottom: rem(48);
+        padding-left: $padding-sp;
+    }
 }
 
 .about__lead {
-  @include font(40, 48, null, $light);
-  color: #717171;
-  padding-top: rem(47);
+    @include font(40, 48, null, $regular);
+    padding-top: rem(47);
 
-  @include mq("md") {
-    @include font(27, 39);
-    padding-top: rem(40);
-  }
+    @include mq("md") {
+        @include font(27, 39);
+        padding-top: rem(40);
+    }
 }
 
 .about__body {
-  display: grid;
-  grid-template-columns: 55.5% 44.5%;
-  padding-top: rem(42);
+    display: grid;
+    grid-template-columns: 55.5% 44.5%;
+    padding-top: rem(42);
 
-  @include mq("md") {
-    grid-template-columns: 1fr;
-    row-gap: rem(36);
-    padding-top: rem(36);
-  }
+    @include mq("md") {
+        grid-template-columns: 1fr;
+        row-gap: rem(36);
+        padding-top: rem(36);
+    }
 }
 
 .about__gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-content: start;
-  gap: rem(3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
 }
 
 .about__image {
-  overflow: hidden;
-  aspect-ratio: 683 / 496;
+    overflow: hidden;
+    aspect-ratio: 683 / 496;
 }
 
 .about__image img {
-  min-height: 100%;
-  object-fit: cover;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .about__info {
-  color: #717171;
-  padding-left: rem(50);
+    color: #717171;
+    padding-left: rem(50);
 
-  @include mq("md") {
-    padding-left: 0;
-  }
+    @include mq("md") {
+        padding-left: 0;
+    }
 }
 
 .about__details {
-  display: flex;
-  flex-direction: column;
-  row-gap: rem(14);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(14);
 }
 
 .about__detail {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: rem(8);
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: rem(8);
 }
 
 .about__term,
 .about__description {
-  @include font(15, 24, null, $light);
+    @include font(17, 30, null, $regular);
 }
 
 .about__description a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .about__business {
-  padding-top: rem(10);
+    padding-top: rem(10);
 }
 
 .about__business-title {
-  @include font(15, 24, null, $light);
+    @include font(17, 30, null, $regular);
 }
 
 .about__business-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: rem(14);
-  padding-top: rem(12);
-  padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(14);
+    padding-top: rem(12);
+    padding-left: 0;
 }
 
 .about__business-item {
-  @include font(15, 24, null, $light);
+    @include font(17, 30, null, $regular);
 
-  &::before {
-    content: "・";
-  }
+    &::before {
+        content: "・";
+        margin-right: rem(10);
+    }
 }
 
 .site-footer {
-  color: $white;
-  text-align: center;
-  background-image: url("../img/footer-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: rem(40);
-  padding-right: $padding-pc;
-  padding-bottom: rem(57);
-  padding-left: $padding-pc;
+    color: $white;
+    text-align: center;
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(40);
+    padding-right: $padding-pc;
+    padding-bottom: rem(57);
+    padding-left: $padding-pc;
 
-  @include mq("md") {
-    background-position: 57% center;
-    padding-top: rem(42);
-    padding-right: $padding-sp;
-    padding-bottom: rem(40);
-    padding-left: $padding-sp;
-  }
+    @include mq("md") {
+        background-position: 57% center;
+        padding-top: rem(42);
+        padding-right: $padding-sp;
+        padding-bottom: rem(40);
+        padding-left: $padding-sp;
+    }
 }
 
 .site-footer__nav-list {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  column-gap: rem(30);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: rem(30);
 
-  @include mq("md") {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: rem(18) rem(12);
-  }
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(18) rem(12);
+    }
 }
 
 .site-footer__nav-link {
-  display: flex;
-  flex-direction: column;
-  color: inherit;
-  text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
 }
 
 .site-footer__nav-ja {
-  @include font(16, 21, null, $light);
-  border-bottom: 1px solid currentColor;
+    @include font(16, 21, null, $light);
+    border-bottom: 1px solid currentColor;
 }
 
 .site-footer__nav-en {
-  @include font(16, 21, null, $light);
+    @include font(16, 21, null, $light);
 }
 
 .site-footer__brand {
-  padding-top: rem(65);
+    padding-top: rem(65);
 
-  @include mq("md") {
-    padding-top: rem(46);
-  }
+    @include mq("md") {
+        padding-top: rem(46);
+    }
 }
 
 .site-footer__brand img {
-  width: rem(323);
-  margin-right: auto;
-  margin-left: auto;
+    width: rem(323);
+    margin-right: auto;
+    margin-left: auto;
 
-  @include mq("md") {
-    width: rem(260);
-  }
+    @include mq("md") {
+        width: rem(260);
+    }
 }
 
 .site-footer__message {
-  padding-top: rem(85);
+    padding-top: rem(85);
 
-  @include mq("md") {
-    padding-top: rem(58);
-  }
+    @include mq("md") {
+        padding-top: rem(58);
+    }
 }
 
 .site-footer__message-ja {
-  @include font(28, 38, 10, $bold);
+    @include font(28, 38, 10, $bold);
 
-  @include mq("md") {
-    @include font(17, 28);
-  }
+    @include mq("md") {
+        @include font(17, 28);
+    }
 }
 
 .site-footer__message-main {
-  @include font(101, 115, null, $bold);
-  padding-top: rem(3);
+    @include font(101, 115, null, $bold);
+    padding-top: rem(3);
 
-  @include mq("md") {
-    @include font(46, 58);
-    padding-top: rem(12);
-  }
+    @include mq("md") {
+        @include font(46, 58);
+        padding-top: rem(12);
+    }
 }
 
 .site-footer__message-sub {
-  @include font(44, 58, null, $bold);
-  padding-top: rem(25);
+    @include font(44, 58, null, $bold);
+    padding-top: rem(25);
 
-  @include mq("md") {
-    @include font(24, 36);
-    padding-top: rem(14);
-  }
+    @include mq("md") {
+        @include font(24, 36);
+        padding-top: rem(14);
+    }
 }
 
 .site-footer__copyright {
-  @include font(17, 25, 25, $light);
-  padding-top: rem(124);
+    @include font(17, 25, 25, $light);
+    padding-top: rem(124);
 
-  @include mq("md") {
-    @include font(11, 18);
-    padding-top: rem(70);
-  }
+    @include mq("md") {
+        @include font(11, 18);
+        padding-top: rem(70);
+    }
 }

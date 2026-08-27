@@ -96,4 +96,45 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(".js-modal").fadeOut();
         $("html,body").css("overflow", "initial");
     });
+
+    // 各セクション: section-heading__labelの左端を本文コピー要素の左端に揃える
+    var HEADING_LINE_ALIGN_TARGETS = [
+        { section: "#values", copy: ".values__copy" },
+        { section: "#mission", copy: ".mission__copy-ja" },
+        { section: "#projects", copy: ".projects__copy" }
+    ];
+
+    function alignHeadingLines() {
+        var isPc = window.matchMedia("(min-width: 769px)").matches;
+
+        HEADING_LINE_ALIGN_TARGETS.forEach(function (target) {
+            var $section = $(target.section);
+            var $line = $section.find(".section-heading__line");
+            var $label = $section.find(".section-heading__label");
+            var $copy = $section.find(target.copy);
+
+            if (!$line.length || !$label.length || !$copy.length) return;
+
+            if (!isPc) {
+                $line.css("width", "");
+                return;
+            }
+
+            var currentWidth = $line.width();
+            var delta = $copy.offset().left - $label.offset().left;
+            $line.css("width", currentWidth + delta + "px");
+        });
+    }
+
+    alignHeadingLines();
+    $(window).on("load", alignHeadingLines);
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(alignHeadingLines);
+    }
+
+    var headingLineResizeTimer;
+    $(window).on("resize", function () {
+        clearTimeout(headingLineResizeTimer);
+        headingLineResizeTimer = setTimeout(alignHeadingLines, 100);
+    });
 });

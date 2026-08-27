@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="button-arrow" transform="translate(-495 -2148)">
+    <g id="楕円形_3" data-name="楕円形 3" opacity="0.645">
+      <circle id="楕円形_3-2" data-name="楕円形 3" cx="23.5" cy="23.5" r="23.5" transform="translate(495 2148)" fill="#fff"/>
+      <path id="楕円形_3_-_アウトライン" data-name="楕円形 3 - アウトライン" d="M23.5,2a21.506,21.506,0,0,0-8.368,41.311A21.506,21.506,0,0,0,31.868,3.689,21.364,21.364,0,0,0,23.5,2m0-2A23.5,23.5,0,1,1,0,23.5,23.5,23.5,0,0,1,23.5,0Z" transform="translate(495 2148)" fill="#63a3a1"/>
+    </g>
+    <path id="多角形_3" data-name="多角形 3" d="M14,3.969,3.482,22H24.518L14,3.969M14,0,28,24H0Z" transform="translate(535 2158) rotate(90)" fill="#62a2a1"/>
+  </g>
+</svg>
