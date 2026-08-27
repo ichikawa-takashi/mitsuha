@@ -1468,16 +1468,17 @@ body.is-modal-open {
 }
 
 .site-footer__nav-ja {
-  font-size: 1rem;
-  line-height: 1.3125;
-  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3888888889;
+  font-weight: 400;
   border-bottom: 1px solid currentColor;
+  padding-bottom: 0.3125rem;
 }
 
 .site-footer__nav-en {
-  font-size: 1rem;
-  line-height: 1.3125;
-  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3888888889;
+  font-weight: 400;
 }
 
 .site-footer__brand {
@@ -1490,7 +1491,7 @@ body.is-modal-open {
 }
 
 .site-footer__brand img {
-  width: 20.1875rem;
+  width: 23.75rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1510,8 +1511,8 @@ body.is-modal-open {
 }
 
 .site-footer__message-ja {
-  font-size: 1.75rem;
-  line-height: 1.3571428571;
+  font-size: 1.875rem;
+  line-height: 1.2666666667;
   letter-spacing: 0.01em;
   font-weight: 700;
 }
@@ -1523,10 +1524,10 @@ body.is-modal-open {
 }
 
 .site-footer__message-main {
-  font-size: 6.3125rem;
-  line-height: 1.1386138614;
+  font-size: 6.25rem;
+  line-height: 1.15;
   font-weight: 700;
-  padding-top: 0.1875rem;
+  padding-top: 1rem;
 }
 @media screen and (max-width: 768px) {
   .site-footer__message-main {
@@ -1537,8 +1538,8 @@ body.is-modal-open {
 }
 
 .site-footer__message-sub {
-  font-size: 2.75rem;
-  line-height: 1.3181818182;
+  font-size: 3.75rem;
+  line-height: 1.3333333333;
   font-weight: 700;
   padding-top: 1.5625rem;
 }
@@ -1546,15 +1547,22 @@ body.is-modal-open {
   .site-footer__message-sub {
     font-size: 1.5rem;
     line-height: 1.5;
+    font-weight: 700;
     padding-top: 0.875rem;
   }
 }
 
+.site-footer__message-sub-small {
+  font-size: 2.5rem;
+  line-height: 2;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+
 .site-footer__copyright {
-  font-size: 1.0625rem;
-  line-height: 1.4705882353;
-  letter-spacing: 0.025em;
-  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3888888889;
+  font-weight: 400;
   padding-top: 7.75rem;
 }
 @media screen and (max-width: 768px) {

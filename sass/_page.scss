@@ -952,12 +952,13 @@ margin-top: rem(48);
 }
 
 .site-footer__nav-ja {
-    @include font(16, 21, null, $light);
+    @include font(18, 25, null, $regular);
     border-bottom: 1px solid currentColor;
+    padding-bottom: rem(5);
 }
 
 .site-footer__nav-en {
-    @include font(16, 21, null, $light);
+    @include font(18, 25, null, $regular);
 }
 
 .site-footer__brand {
@@ -969,7 +970,7 @@ margin-top: rem(48);
 }
 
 .site-footer__brand img {
-    width: rem(323);
+    width: rem(380);
     margin-right: auto;
     margin-left: auto;
 
@@ -987,7 +988,7 @@ margin-top: rem(48);
 }
 
 .site-footer__message-ja {
-    @include font(28, 38, 10, $bold);
+    @include font(30, 38, 10, $bold);
 
     @include mq("md") {
         @include font(17, 28);
@@ -995,8 +996,8 @@ margin-top: rem(48);
 }
 
 .site-footer__message-main {
-    @include font(101, 115, null, $bold);
-    padding-top: rem(3);
+    @include font(100, 115, null, $bold);
+    padding-top: rem(16);
 
     @include mq("md") {
         @include font(46, 58);
@@ -1005,17 +1006,21 @@ margin-top: rem(48);
 }
 
 .site-footer__message-sub {
-    @include font(44, 58, null, $bold);
+    @include font(60, 80, null, $bold);
     padding-top: rem(25);
 
     @include mq("md") {
-        @include font(24, 36);
+        @include font(24, 36, null, $bold);
         padding-top: rem(14);
     }
 }
 
+.site-footer__message-sub-small{
+    @include font(40,80,0,$bold);
+}
+
 .site-footer__copyright {
-    @include font(17, 25, 25, $light);
+    @include font(18, 25, null, $regular);
     padding-top: rem(124);
 
     @include mq("md") {
