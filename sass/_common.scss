@@ -13,8 +13,8 @@
 }
 
 .section-heading {
-  display: grid;
-  grid-template-columns: max-content auto rem(262) max-content;
+    display: flex;
+    justify-content: flex-start;
   align-items: center;
   column-gap: rem(22);
   color: #717171;
@@ -91,16 +91,13 @@ margin-bottom: rem(-20);
 }
 
 .section-heading__number--spaced {
-  margin-right: rem(29);
 
-  @include mq("md") {
-    margin-right: 0;
-  }
 }
 
 .section-heading__title {
-  @include font(56, 67, null, $regular);
-
+  @include font(60, 67, null, $regular);
+    width: fit-content;
+    flex-shrink: 0;
   @include mq("md") {
     @include font(38, 46);
   }
@@ -124,7 +121,7 @@ margin-bottom: rem(-20);
 
 .section-heading__line {
   display: block;
-  width: 100%;
+  width: rem(283);
   border-top: 1px solid currentColor;
     margin-bottom: rem(-28);
   @include mq("md") {
@@ -133,9 +130,34 @@ margin-bottom: rem(-20);
   }
 }
 
+.section-heading__line--values {
+  width: rem(283);
+}
+
+.section-heading__line--mission {
+  width: rem(283);
+}
+
+.section-heading__line--services {
+  width: rem(283);
+}
+
+.section-heading__line--projects {
+  width: rem(283);
+}
+
+.section-heading__line--sdgs {
+  width: rem(283);
+}
+
+.section-heading__line--about {
+  width: rem(283);
+}
+
 .section-heading__label {
   @include font(25, 80, 0, $light);
     margin-bottom: rem(-24);
+    flex-shrink: 0;
   @include mq("md") {
     @include font(17, 28);
     grid-column: 1 / -1;

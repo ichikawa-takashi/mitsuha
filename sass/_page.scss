@@ -10,8 +10,8 @@
 }
 
 .values__body {
-  display: grid;
-  grid-template-columns: 54.2% 45.8%;
+display: flex;
+justify-content: space-between;
   padding-top: rem(48);
   padding-right: rem(32);
   padding-left: rem(64);
@@ -26,8 +26,7 @@
 }
 
 .values__lead {
-  @include font(40, 48, null, $light);
-  color: #717171;
+  @include font(40, 60, null, $regular);
 
   @include mq("md") {
     @include font(28, 40);
@@ -35,7 +34,6 @@
 }
 
 .values__copy {
-  color: #717171;
   padding-left: rem(6);
 
   @include mq("md") {
@@ -44,7 +42,7 @@
 }
 
 .values__copy-ja {
-  @include font(15, 28, 20, $light);
+  @include font(17, 30, 0, $regular);
 
   @include mq("md") {
     @include font(15, 29);
@@ -52,7 +50,7 @@
 }
 
 .values__copy-en {
-  @include font(12, 23, 5, $light);
+  @include font(12, 23, 0, $regular);
   padding-top: rem(14);
 
   @include mq("md") {
@@ -69,10 +67,7 @@
 .values__gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: rem(3);
   padding-top: rem(36);
-  padding-right: rem(5);
-  padding-left: rem(5);
 
   @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
@@ -114,7 +109,7 @@
 }
 
 .mission__lead {
-  @include font(38, 48, null, $light);
+  @include font(40, 80, null, $regular);
   padding-top: rem(27);
 
   @include mq("md") {
