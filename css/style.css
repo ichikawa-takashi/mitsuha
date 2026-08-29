@@ -722,10 +722,9 @@ select::-ms-expand {
 }
 
 .services__shape,
-.services__collage,
-.services__renovation-gallery,
+.services__collage-wrap,
 .services__vertical-label,
-.services__card {
+.services__collage-wrap > .services__card {
   grid-area: 1/1;
 }
 
@@ -754,17 +753,16 @@ select::-ms-expand {
   }
 }
 
-.services__collage,
-.services__renovation-gallery {
+.services__collage-wrap {
   align-self: start;
+  display: grid;
   width: calc(100% - 7.3125rem);
   aspect-ratio: 2490/1488;
   margin-top: 7.375rem;
   margin-left: 7.3125rem;
 }
 @media screen and (max-width: 768px) {
-  .services__collage,
-  .services__renovation-gallery {
+  .services__collage-wrap {
     width: 100%;
     margin-top: 8.125rem;
     margin-left: 0;
@@ -772,18 +770,9 @@ select::-ms-expand {
 }
 
 .services__collage {
-  object-fit: cover;
-}
-
-.services__renovation-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  overflow: hidden;
-}
-
-.services__renovation-gallery img {
-  min-height: 100%;
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -818,12 +807,9 @@ select::-ms-expand {
 }
 
 .services__card {
-  align-self: start;
   width: 40.5rem;
   color: #ffffff;
   background: linear-gradient(135deg, rgba(63, 153, 167, 0.68), rgba(114, 177, 75, 0.68));
-  margin-top: 15.8125rem;
-  margin-left: 24.1875rem;
   padding-top: 1.375rem;
   padding-right: 3rem;
   padding-bottom: 1.5rem;
@@ -832,9 +818,17 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .services__card {
     width: 100%;
-    margin-top: 18.75rem;
-    margin-left: 0;
     padding: 1.5rem 15px 1.875rem;
+  }
+}
+
+.services__collage-wrap .services__card {
+  align-self: center;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .services__collage-wrap .services__card {
+    margin-left: 0;
   }
 }
 
@@ -1072,6 +1066,10 @@ select::-ms-expand {
   place-items: center;
   overflow-y: auto;
   padding: 2.5rem;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 @media screen and (max-width: 768px) {
   .project-modal {
@@ -1080,8 +1078,11 @@ select::-ms-expand {
   }
 }
 
-.project-modal[hidden] {
-  display: none;
+.project-modal.is-active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .project-modal__backdrop {
@@ -1097,12 +1098,18 @@ select::-ms-expand {
   width: min(90vw, 72.5rem);
   background-color: #ffffff;
   padding: 0.4375rem;
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   .project-modal__panel {
     width: 100%;
     padding: 0.4375rem;
   }
+}
+
+.project-modal.is-active .project-modal__panel {
+  transform: scale(1);
 }
 
 .project-modal__title {

@@ -15,14 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
     beforeImage.src = button.dataset.before;
     afterImage.src = button.dataset.after;
     projectNumber.textContent = button.dataset.project;
-    modal.hidden = false;
+    modal.classList.add("is-active");
+    modal.setAttribute("aria-hidden", "false");
     document.documentElement.classList.add("is-modal-open");
     document.body.classList.add("is-modal-open");
     modal.querySelector(".project-modal__close").focus();
   }
 
   function closeModal() {
-    modal.hidden = true;
+    modal.classList.remove("is-active");
+    modal.setAttribute("aria-hidden", "true");
     document.documentElement.classList.remove("is-modal-open");
     document.body.classList.remove("is-modal-open");
 
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && !modal.hidden) {
+    if (event.key === "Escape" && modal.classList.contains("is-active")) {
       closeModal();
     }
   });
