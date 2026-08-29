@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "sass": "sass --watch sass/style.scss:css/style.css --style=expanded --source-map",
+  "serve": "browser-sync start --server --files \"css/*.css, *.html, js/*.js\"",
+  "dev": "concurrently -k \"npm run sass\" \"npm run serve\""
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ichikawa-takashi/mitsuha.git"
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/ichikawa-takashi/mitsuha/issues"
   },
-  "homepage": "https://github.com/ichikawa-takashi/mitsuha#readme"
+  "homepage": "https://github.com/ichikawa-takashi/mitsuha#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.5",
+    "sass": "^1.103.1"
+  }
 }

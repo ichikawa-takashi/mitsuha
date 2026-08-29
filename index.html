@@ -146,6 +146,18 @@
             </div>
 
             <div class="services__showcase">
+                <div class="services__tabs" role="tablist" aria-label="サービスを切り替える">
+                    <button class="services__tab is-active js-service-tab" id="service-tab-plumbing" type="button"
+                        role="tab" aria-controls="service-plumbing" aria-selected="true" data-service="plumbing">
+                        <span class="services__tab-en">Plumbing repair and replacement services</span>
+                        <span class="services__tab-ja">水回り設備の修繕・交換</span>
+                    </button>
+                    <button class="services__tab js-service-tab" id="service-tab-renovation" type="button" role="tab"
+                        aria-controls="service-renovation" aria-selected="false" data-service="renovation">
+                        <span class="services__tab-en">Home renovation</span>
+                        <span class="services__tab-ja">住宅リフォーム</span>
+                    </button>
+                </div>
                 <div class="services__panels">
                     <article class="services__panel services__panel--plumbing is-active js-service-panel"
                         id="service-plumbing" role="tabpanel" aria-labelledby="service-tab-plumbing"
@@ -187,7 +199,7 @@
                             Home renovation<span aria-hidden="true"></span>
                         </p>
                         <div class="services__collage-wrap">
-                            <img class="services__collage" src="./img/services-home.jpg" alt="住宅リフォームの施工風景" />
+                            <img class="services__collage" src="./img/services-home.jpg" alt="住宅リフォーム施工の様子" />
                             <div class="services__card">
                                 <h4 class="services__card-title">住宅リフォーム</h4>
                                 <div class="services__card-copy services__card-copy--renovation">
@@ -203,18 +215,7 @@
                     </article>
                 </div>
 
-                <div class="services__tabs" role="tablist" aria-label="サービスを切り替える">
-                    <button class="services__tab is-active js-service-tab" id="service-tab-plumbing" type="button"
-                        role="tab" aria-controls="service-plumbing" aria-selected="true" data-service="plumbing">
-                        <span class="services__tab-en">Plumbing repair and replacement services</span>
-                        <span class="services__tab-ja">水回り設備の修繕・交換</span>
-                    </button>
-                    <button class="services__tab js-service-tab" id="service-tab-renovation" type="button" role="tab"
-                        aria-controls="service-renovation" aria-selected="false" data-service="renovation">
-                        <span class="services__tab-en">Home renovation</span>
-                        <span class="services__tab-ja">住宅リフォーム</span>
-                    </button>
-                </div>
+
             </div>
         </section>
 

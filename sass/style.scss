@@ -201,9 +201,9 @@ html {
   //inner~max-screen
   font-size: 16px;
 
-  @media (min-width: 1440px) {
-    font-size: vw(1440, 16);
-  }
+//   @media (min-width: 1440px) {
+//     font-size: vw(1440, 16);
+//   }
 
   //inner~768px
   @media (max-width: $inner) {

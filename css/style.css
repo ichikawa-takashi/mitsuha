@@ -41,11 +41,6 @@ line-heightが％の場合
 html {
   font-size: 16px;
 }
-@media (min-width: 1440px) {
-  html {
-    font-size: 1.1111111111vw;
-  }
-}
 @media (max-width: 1280px) {
   html {
     font-size: 1.1111111111vw;
@@ -687,7 +682,6 @@ select::-ms-expand {
 }
 
 .services__showcase {
-  display: grid;
   padding-top: 2.375rem;
 }
 @media screen and (max-width: 768px) {
@@ -706,6 +700,7 @@ select::-ms-expand {
 }
 
 .services__panel {
+  position: relative;
   grid-area: 1/1;
   display: grid;
   visibility: hidden;
@@ -734,7 +729,10 @@ select::-ms-expand {
 }
 
 .services__shape--plumbing {
-  width: 53%;
+  position: absolute;
+  width: 70%;
+  left: -5.5625rem;
+  top: -7.25rem;
   justify-self: start;
 }
 @media screen and (max-width: 768px) {
@@ -744,8 +742,11 @@ select::-ms-expand {
 }
 
 .services__shape--renovation {
-  width: 57%;
+  position: absolute;
+  width: 70%;
   justify-self: end;
+  top: -7.5rem;
+  right: -8.375rem;
 }
 @media screen and (max-width: 768px) {
   .services__shape--renovation {
@@ -758,8 +759,8 @@ select::-ms-expand {
   display: grid;
   width: calc(100% - 7.3125rem);
   aspect-ratio: 2490/1488;
-  margin-top: 7.375rem;
   margin-left: 7.3125rem;
+  z-index: 2;
 }
 @media screen and (max-width: 768px) {
   .services__collage-wrap {
@@ -787,8 +788,8 @@ select::-ms-expand {
   column-gap: 1.25rem;
   writing-mode: vertical-rl;
   color: #ffffff;
-  margin-top: 8.125rem;
   margin-left: 3.125rem;
+  z-index: 3;
 }
 @media screen and (max-width: 768px) {
   .services__vertical-label {
@@ -872,11 +873,10 @@ select::-ms-expand {
 
 .services__tabs {
   z-index: 2;
-  display: grid;
-  grid-template-columns: 24.375rem 13.75rem;
-  column-gap: 3.4375rem;
+  display: flex;
+  align-items: center;
+  column-gap: 5.625rem;
   align-self: start;
-  width: 41.5625rem;
   margin-left: 7.875rem;
   padding-top: 2.8125rem;
 }
@@ -891,6 +891,7 @@ select::-ms-expand {
 }
 
 .services__tab {
+  z-index: 3;
   color: #111111;
   text-align: left;
   transition: color 0.5s ease, opacity 0.3s ease;
@@ -921,8 +922,8 @@ select::-ms-expand {
 }
 
 .services__tab-ja {
-  font-size: 1.75rem;
-  line-height: 1.4285714286;
+  font-size: 1.875rem;
+  line-height: 1.3333333333;
   font-weight: 300;
   width: fit-content;
   border-bottom: 1px dashed currentColor;
