@@ -181,7 +181,7 @@
     right: rem(-18);
     display: grid;
     place-items: center;
-    width: rem(40);
+    width: max(#{rem(40)}, 40px);
     aspect-ratio: 1;
     transition: transform 0.3s ease;
 
