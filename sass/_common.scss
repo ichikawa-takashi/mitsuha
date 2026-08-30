@@ -24,6 +24,7 @@
   margin-inline: auto;
 
   @include mq("md") {
+    display: grid;
     grid-template-columns: auto 1fr;
     column-gap: rem(12);
     row-gap: rem(12);

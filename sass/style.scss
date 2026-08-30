@@ -213,10 +213,6 @@ html {
   @media (max-width: 767px) {
     font-size: 16px;
   }
-
-  @media (max-width: 375px) {
-    font-size: vw(375, 16);
-  }
 }
 
 /*--------------------------
@@ -305,4 +301,10 @@ $breakpoints: (
 @import "reset";
 @import "common";
 @import "test";
-@import "page";
+@import "values";
+@import "mission";
+@import "services";
+@import "projects";
+@import "sdgs";
+@import "about";
+@import "footer";

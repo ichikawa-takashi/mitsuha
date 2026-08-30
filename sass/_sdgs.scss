@@ -1,0 +1,95 @@
+.sdgs {
+    color: $white;
+    background-image: url("../img/sdgs-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(34);
+    padding-right: rem(59);
+    padding-bottom: rem(54);
+    padding-left: rem(59);
+margin-top: rem(48);
+    @include mq("md") {
+        background-position: 58% center;
+        padding-top: rem(45);
+        padding-right: $padding-sp;
+        padding-bottom: rem(45);
+        padding-left: $padding-sp;
+    }
+}
+
+.sdgs__lead {
+    padding-top: rem(24);
+    max-width: rem(1440);
+    margin-inline: auto;
+
+    @include mq("md") {
+        padding-top: rem(38);
+    }
+}
+
+.sdgs__lead-ja {
+    @include font(40, 60, null,$regular);
+
+    @include mq("md") {
+        @include font(26, 39);
+    }
+}
+
+.sdgs__lead-line {
+    display: block;
+}
+
+.sdgs__lead-en {
+    @include font(27, 34, null, $regular);
+    padding-top: rem(16);
+
+    @include mq("md") {
+        @include font(16, 27);
+        padding-top: rem(10);
+    }
+}
+
+.sdgs__body {
+    display: grid;
+    grid-template-columns: 54% 46%;
+    align-items: flex-end;
+    padding-top: rem(118);
+    max-width: rem(1440);
+    margin-inline: auto;
+
+    @include mq("md") {
+        grid-template-columns: 1fr;
+        row-gap: rem(30);
+        padding-top: rem(44);
+    }
+}
+
+.sdgs__copy-en {
+    @include font(12, 25, null, $regular);
+    max-width: rem(525);
+
+    @include mq("md") {
+        @include font(12, 22);
+        grid-row: 2;
+        max-width: none;
+        padding-top: 0;
+    }
+}
+
+.sdgs__copy-ja {
+    @include font(17, 28,null, $light);
+    padding-left: rem(22);
+
+    @include mq("md") {
+        @include font(15, 28);
+        grid-row: 1;
+        padding-left: 0;
+    }
+}
+
+.sdgs__paragraph {
+    &+& {
+        margin-top: rem(30);
+    }
+}

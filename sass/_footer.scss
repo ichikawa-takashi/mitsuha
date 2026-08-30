@@ -1,0 +1,130 @@
+.site-footer {
+    color: $white;
+    text-align: center;
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(40);
+    padding-right: $padding-pc;
+    padding-bottom: rem(57);
+    padding-left: $padding-pc;
+
+    @include mq("md") {
+        background-position: 57% center;
+        padding-top: rem(42);
+        padding-right: $padding-sp;
+        padding-bottom: rem(40);
+        padding-left: $padding-sp;
+    }
+}
+
+.site-footer__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: rem(30);
+
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(18) rem(12);
+    }
+}
+
+.site-footer__nav-link {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-footer__nav-ja {
+    @include font(18, 25, null, $regular);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: rem(5);
+
+    @include mq("md") {
+        @include font(14, 20);
+    }
+}
+
+.site-footer__nav-en {
+    @include font(18, 25, null, $regular);
+
+    @include mq("md") {
+        @include font(13, 18);
+    }
+}
+
+.site-footer__brand {
+    padding-top: rem(65);
+
+    @include mq("md") {
+        padding-top: rem(46);
+    }
+}
+
+.site-footer__brand img {
+    width: rem(380);
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mq("md") {
+        width: rem(260);
+    }
+}
+
+.site-footer__message {
+    padding-top: rem(85);
+
+    @include mq("md") {
+        padding-top: rem(58);
+    }
+}
+
+.site-footer__message-ja {
+    @include font(30, 38, 10, $bold);
+
+    @include mq("md") {
+        @include font(17, 28);
+    }
+}
+
+.site-footer__message-main {
+    @include font(100, 115, null, $bold);
+    padding-top: rem(16);
+
+    @include mq("md") {
+        @include font(46, 58);
+        padding-top: rem(12);
+    }
+}
+
+.site-footer__message-sub {
+    @include font(60, 80, null, $bold);
+    padding-top: rem(25);
+
+    @include mq("md") {
+        @include font(24, 36, null, $bold);
+        padding-top: rem(14);
+    }
+}
+
+.site-footer__message-sub-small{
+    @include font(40,80,0,$bold);
+
+    @include mq("md") {
+        @include font(16,36,0,$bold);
+    }
+}
+
+.site-footer__copyright {
+    @include font(18, 25, null, $regular);
+    padding-top: rem(124);
+
+    @include mq("md") {
+        @include font(11, 18);
+        padding-top: rem(70);
+    }
+}

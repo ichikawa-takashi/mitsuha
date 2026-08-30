@@ -1,0 +1,283 @@
+.services {
+    overflow: hidden;
+    padding-top: rem(66);
+
+    @include mq("md") {
+        padding-top: rem(48);
+    }
+}
+
+.services__lead {
+    color: #717171;
+    padding-top: rem(52);
+    padding-right: rem(64);
+    padding-left: rem(64);
+    max-width: rem(1440);
+    margin-inline: auto;
+
+    @include mq("md") {
+        padding-top: rem(40);
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
+}
+
+.services__lead-ja {
+    @include font(40, 52, null, $regular);
+
+    @include mq("md") {
+        @include font(27, 40);
+    }
+}
+
+.services__lead-en {
+    @include font(27, 45);
+    padding-top: rem(8);
+
+    @include mq("md") {
+        @include font(15, 25);
+        padding-top: rem(10);
+    }
+}
+
+.services__showcase {
+    // display: grid;
+    padding-top: rem(38);
+    max-width: rem(1440);
+    margin-inline: auto;
+
+    @include mq("md") {
+        padding-top: rem(30);
+    }
+}
+
+.services__panels,
+.services__tabs {
+    grid-area: 1 / 1;
+}
+
+.services__panels {
+    display: grid;
+}
+
+.services__panel {
+    position: relative;
+    grid-area: 1 / 1;
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+.services__panel.is-active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0s;
+}
+
+.services__shape,
+.services__collage-wrap,
+.services__vertical-label,
+.services__collage-wrap > .services__card {
+    grid-area: 1 / 1;
+}
+
+.services__shape {
+    align-self: start;
+    pointer-events: none;
+}
+
+.services__shape--plumbing {
+    position: absolute;
+    width: 70%;
+    left: rem(-89);
+    top: rem(-116);
+    justify-self: start;
+
+    @include mq("md") {
+        width: 100%;
+    }
+}
+
+.services__shape--renovation {
+    position: absolute;
+    width: 70%;
+    justify-self: end;
+    top: rem(-120);
+    right: rem(-134);
+
+    @include mq("md") {
+        width: 100%;
+    }
+}
+
+.services__collage-wrap {
+    align-self: start;
+    display: grid;
+    width: calc(100% - rem(117));
+    aspect-ratio: 2490 / 1488;
+    // margin-top: rem(118);
+    margin-left: rem(117);
+z-index: 2;
+    @include mq("md") {
+        width: 100%;
+        margin-top: rem(16);
+        margin-left: 0;
+    }
+}
+
+.services__collage {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services__vertical-label {
+    @include font(28, 38, null, $light);
+    align-self: start;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+    writing-mode: vertical-rl;
+    color: $white;
+    // margin-top: rem(130);
+    margin-left: rem(50);
+z-index: 3;
+    @include mq("md") {
+        display: none;
+    }
+}
+
+.services__vertical-label span {
+    display: block;
+    border-left: 1px solid currentColor;
+    padding-top: rem(80);
+}
+
+.services__vertical-label--dark {
+    color: #717171;
+}
+
+.services__card {
+    width: rem(648);
+    color: $white;
+    background: linear-gradient(135deg, rgba(63, 153, 167, 0.68), rgba(114, 177, 75, 0.68));
+    padding-top: rem(22);
+    padding-right: rem(48);
+    padding-bottom: rem(24);
+    padding-left: rem(48);
+
+    @include mq("md") {
+        width: 100%;
+        padding: rem(24) $padding-sp rem(30);
+    }
+}
+
+.services__collage-wrap .services__card {
+    align-self: center;
+    margin-inline: auto;
+
+    @include mq("md") {
+        margin-left: 0;
+    }
+}
+
+.services__card-title {
+    @include font(28, 40, null, $light);
+
+    @include mq("md") {
+        @include font(22, 32);
+    }
+}
+
+.services__card-summary {
+    @include font(15, 28, null, $light);
+    padding-top: rem(18);
+}
+
+.services__card-copy {
+    @include font(15, 28, null, $light);
+    padding-top: rem(28);
+}
+
+.services__card-copy p {
+    &+& {
+        margin-top: rem(28);
+    }
+}
+
+.services__card-copy strong {
+    font-weight: $regular;
+}
+
+.services__card-copy--renovation {
+    padding-top: rem(20);
+}
+
+.services__tabs {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    // display: grid;
+    // grid-template-columns: rem(390) rem(220);
+    column-gap: rem(90);
+    align-self: start;
+    // width: rem(665);
+    margin-left: rem(126);
+    padding-top: rem(45);
+
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: rem(18);
+        width: 100%;
+        margin-left: 0;
+        padding: rem(25) $padding-sp 0;
+    }
+}
+
+.services__tab {
+    z-index: 3;
+    color: #111111;
+    text-align: left;
+    transition: color 0.5s ease, opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.72;
+    }
+}
+
+.services__tab.is-active {
+    color: $white;
+}
+
+.services__tab-en,
+.services__tab-ja {
+    display: block;
+}
+
+.services__tab-en {
+    @include font(20, 28, null, $light);
+
+    @include mq("md") {
+        @include font(11, 18);
+    }
+}
+
+.services__tab-ja {
+    @include font(30, 40, null, $light);
+    width: fit-content;
+    border-bottom: 1px dashed currentColor;
+
+    @include mq("md") {
+        @include font(17, 28);
+    }
+}
+
+.services__tab.is-active .services__tab-ja {
+    border-bottom-color: transparent;
+}

@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.querySelector(".js-project-modal");
   const openButtons = document.querySelectorAll(".js-project-open");
+  const projectItems = document.querySelectorAll(".projects__item");
 
   if (!modal || !openButtons.length) return;
 
@@ -33,8 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  openButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
+  projectItems.forEach(function (item) {
+    const button = item.querySelector(".js-project-open");
+    if (!button) return;
+
+    item.addEventListener("click", function () {
       openModal(button);
     });
   });
