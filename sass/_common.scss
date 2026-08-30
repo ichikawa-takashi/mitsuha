@@ -20,6 +20,8 @@
   color: #717171;
   padding-right: rem(64);
   padding-left: rem(64);
+  max-width: rem(1440);
+  margin-inline: auto;
 
   @include mq("md") {
     grid-template-columns: auto 1fr;

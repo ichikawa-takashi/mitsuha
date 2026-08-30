@@ -201,6 +201,8 @@ select::-ms-expand {
   color: #717171;
   padding-right: 4rem;
   padding-left: 4rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .section-heading {
@@ -402,6 +404,8 @@ select::-ms-expand {
   padding-top: 3rem;
   padding-right: 2rem;
   padding-left: 4rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .values__body {
@@ -461,6 +465,8 @@ select::-ms-expand {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 2.25rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .values__gallery {
@@ -508,6 +514,8 @@ select::-ms-expand {
   line-height: 2;
   font-weight: 400;
   padding-top: 1.6875rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .mission__lead {
@@ -521,6 +529,8 @@ select::-ms-expand {
   display: grid;
   grid-template-columns: 52.4% 47.6%;
   padding-top: 0.875rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .mission__body {
@@ -647,6 +657,8 @@ select::-ms-expand {
   padding-top: 3.25rem;
   padding-right: 4rem;
   padding-left: 4rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .services__lead {
@@ -683,6 +695,8 @@ select::-ms-expand {
 
 .services__showcase {
   padding-top: 2.375rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .services__showcase {
@@ -955,6 +969,8 @@ select::-ms-expand {
   padding-top: 3.25rem;
   padding-right: 4rem;
   padding-left: 4rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .projects__intro {
@@ -1011,6 +1027,8 @@ select::-ms-expand {
   padding-top: 2.25rem;
   padding-right: 0.3125rem;
   padding-left: 0.3125rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .projects__gallery {
@@ -1226,6 +1244,8 @@ body.is-modal-open {
 
 .sdgs__lead {
   padding-top: 1.5rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .sdgs__lead {
@@ -1268,6 +1288,8 @@ body.is-modal-open {
   grid-template-columns: 54% 46%;
   align-items: flex-end;
   padding-top: 7.375rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .sdgs__body {
@@ -1332,6 +1354,8 @@ body.is-modal-open {
   line-height: 1.2;
   font-weight: 400;
   padding-top: 2.9375rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .about__lead {
@@ -1345,6 +1369,8 @@ body.is-modal-open {
   display: grid;
   grid-template-columns: 55.5% 44.5%;
   padding-top: 2.625rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media screen and (max-width: 768px) {
   .about__body {

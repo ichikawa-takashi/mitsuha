@@ -15,6 +15,8 @@
     padding-top: rem(48);
     padding-right: rem(32);
     padding-left: rem(64);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: 1fr;
@@ -62,6 +64,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: rem(36);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: repeat(2, 1fr);
@@ -105,6 +109,8 @@
 .mission__lead {
     @include font(40, 80, null, $regular);
     padding-top: rem(27);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         @include font(27, 39);
@@ -116,6 +122,8 @@
     display: grid;
     grid-template-columns: 52.4% 47.6%;
     padding-top: rem(14);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: 1fr;
@@ -226,6 +234,8 @@
     padding-top: rem(52);
     padding-right: rem(64);
     padding-left: rem(64);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         padding-top: rem(40);
@@ -255,6 +265,8 @@
 .services__showcase {
     // display: grid;
     padding-top: rem(38);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         padding-top: rem(30);
@@ -506,6 +518,8 @@ z-index: 3;
     padding-top: rem(52);
     padding-right: rem(64);
     padding-left: rem(64);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: 1fr;
@@ -550,6 +564,8 @@ z-index: 3;
     padding-top: rem(36);
     padding-right: rem(5);
     padding-left: rem(5);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: repeat(2, 1fr);
@@ -749,6 +765,8 @@ margin-top: rem(48);
 
 .sdgs__lead {
     padding-top: rem(24);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         padding-top: rem(38);
@@ -782,6 +800,8 @@ margin-top: rem(48);
     grid-template-columns: 54% 46%;
     align-items: flex-end;
     padding-top: rem(118);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: 1fr;
@@ -836,6 +856,8 @@ margin-top: rem(48);
 .about__lead {
     @include font(40, 48, null, $regular);
     padding-top: rem(47);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         @include font(27, 39);
@@ -847,6 +869,8 @@ margin-top: rem(48);
     display: grid;
     grid-template-columns: 55.5% 44.5%;
     padding-top: rem(42);
+    max-width: rem(1440);
+    margin-inline: auto;
 
     @include mq("md") {
         grid-template-columns: 1fr;
