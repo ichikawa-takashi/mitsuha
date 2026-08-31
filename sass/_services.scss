@@ -208,6 +208,9 @@ z-index: 3;
     &+& {
         margin-top: rem(28);
     }
+    & + p{
+        margin-top: rem(28);
+    }
 }
 
 .services__card-copy strong {

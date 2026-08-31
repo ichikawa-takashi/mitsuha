@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.querySelector(".js-project-modal");
   const openButtons = document.querySelectorAll(".js-project-open");
-  const projectItems = document.querySelectorAll(".projects__item");
 
   if (!modal || !openButtons.length) return;
 
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.setAttribute("aria-hidden", "false");
     document.documentElement.classList.add("is-modal-open");
     document.body.classList.add("is-modal-open");
-    modal.querySelector(".project-modal__close").focus();
+    modal.querySelector(".project-modal__close").focus({ preventScroll: true });
   }
 
   function closeModal() {
@@ -30,17 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("is-modal-open");
 
     if (lastFocusedElement) {
-      lastFocusedElement.focus();
+      lastFocusedElement.focus({ preventScroll: true });
     }
   }
 
-  projectItems.forEach(function (item) {
+  document.addEventListener("click", function (event) {
+    const item = event.target.closest(".projects__item");
+    if (!item) return;
+
     const button = item.querySelector(".js-project-open");
     if (!button) return;
 
-    item.addEventListener("click", function () {
-      openModal(button);
-    });
+    openModal(button);
   });
 
   closeButtons.forEach(function (button) {

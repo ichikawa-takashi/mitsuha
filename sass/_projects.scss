@@ -54,8 +54,8 @@
 
 .projects__gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: rem(3);
+    grid-template-columns: 1fr;
+    row-gap: rem(3);
     padding-top: rem(36);
     padding-right: rem(5);
     padding-left: rem(5);
@@ -63,19 +63,35 @@
     margin-inline: auto;
 
     @include mq("md") {
-        grid-template-columns: repeat(2, 1fr);
         padding-top: rem(45);
         padding-right: rem(3);
         padding-left: rem(3);
     }
 }
 
-.projects__item {
+.projects__row {
+    overflow: hidden;
+    width: 100%;
+    min-width: 0;
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+}
+
+.projects__row .projects__item {
     display: grid;
     overflow: hidden;
+    flex-shrink: 0;
+    width: calc(25% - #{rem(3)} * 3 / 4);
     aspect-ratio: 4 / 3;
     position: relative;
     cursor: pointer;
+    margin-right: rem(3);
+
+    @include mq("md") {
+        width: calc(50% - #{rem(3)} / 2);
+    }
 }
 
 .projects__image {
@@ -106,10 +122,10 @@
         margin-right: rem(8);
         margin-bottom: rem(8);
     }
+}
 
-    &:hover {
-        transform: rotate(90deg);
-    }
+.projects__row .projects__item:hover .projects__open {
+    transform: rotate(90deg);
 }
 
 .project-modal {
