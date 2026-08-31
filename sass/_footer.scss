@@ -115,6 +115,10 @@
     }
 }
 
+.site-footer__message-ja-line {
+    display: inline-block;
+}
+
 .site-footer__message-main {
     @include font(100, 115, null, $bold);
     padding-top: rem(16);

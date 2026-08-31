@@ -2039,6 +2039,10 @@ body.is-modal-open {
   }
 }
 
+.site-footer__message-ja-line {
+  display: inline-block;
+}
+
 .site-footer__message-main {
   font-size: 6.25rem;
   line-height: 1.15;
