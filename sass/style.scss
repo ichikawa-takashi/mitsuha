@@ -248,6 +248,7 @@ $blue: #7a759f;
 body {
   font-family: $sans;
   color: $black;
+  font-feature-settings: "palt";
 }
 
 // ==============================
@@ -301,6 +302,7 @@ $breakpoints: (
 @import "reset";
 @import "common";
 @import "test";
+@import "fv";
 @import "values";
 @import "mission";
 @import "services";

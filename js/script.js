@@ -38,7 +38,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     $(document).on('click', 'a[href*="#"]', function () {
         let time = 400;
-        let header = $('header').innerHeight();
+        let header = $('.fv__header').innerHeight() || 0;
         let target = $(this.hash);
         if (!target.length) return;
         let targetY = target.offset().top - header;
@@ -73,13 +73,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     function openDrawer() {
-        $(".js-drawer").addClass("is-open");
-        $(".js-hamburger").addClass("is-open");
+        $(".js-drawer").addClass("is-open").attr("aria-hidden", "false");
+        $(".js-hamburger").addClass("is-open").attr("aria-expanded", "true");
+        $("html").addClass("is-fixed");
     }
 
     function closeDrawer() {
-        $(".js-drawer").removeClass("is-open");
-        $(".js-hamburger").removeClass("is-open");
+        $(".js-drawer").removeClass("is-open").attr("aria-hidden", "true");
+        $(".js-hamburger").removeClass("is-open").attr("aria-expanded", "false");
+        $("html").removeClass("is-fixed");
     }
 
     // modal
