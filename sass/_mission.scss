@@ -10,6 +10,7 @@
     padding-left: rem(59);
 
     @include mq("md") {
+        background-image: url("../img/mission-vision-bg_sp.jpg");
         background-position: 42% center;
         padding-top: rem(45);
         padding-right: $padding-sp;
@@ -89,14 +90,19 @@
 
 .mission__label-icon {
     background-image: url(../img/button-arrow.svg);
-    width: rem(47);
-    height: rem(47);
+    width: rem(72);
+    height: rem(72);
+    margin-block: rem(-22);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
 
     @include mq("md") {
-        width: rem(32);
+        width: rem(44);
+        height: rem(44);
+        margin-block: rem(-8);
     }
 
 }

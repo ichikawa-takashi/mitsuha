@@ -25,4 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  const fvBadges = document.querySelectorAll(".js-fv-badge");
+  fvBadges.forEach(function (badge) {
+    badge.addEventListener("click", function () {
+      activateService(badge.dataset.service);
+    });
+  });
 });

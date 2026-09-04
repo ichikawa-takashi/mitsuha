@@ -1,16 +1,18 @@
 .fv {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 2732 / 1604;
+    width: 100vw;
+    height: vw(1440,802);
     background-image: url("../img/fv.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: $white;
-
+max-height: 100vh;
     @include mq("md") {
         aspect-ratio: auto;
-        min-height: 100svh;
+        min-height: 100vh;
+        background-image: url("../img/fv_sp.jpg");
     }
 }
 
@@ -51,7 +53,9 @@
     display: none;
 
     @include mq("md") {
-        position: relative;
+        position: fixed;
+        top: rem(16);
+        right: $padding-sp;
         z-index: 3;
         display: flex;
         flex-direction: column;
@@ -201,7 +205,7 @@
     max-width: rem(780);
     position: absolute;
     left: rem(36);
-    bottom: rem(80);
+    bottom: rem(64);
 
     @include mq("md") {
         max-width: none;
@@ -220,8 +224,8 @@
 }
 
 .fv__headline {
-    @include font(100, 80, 0, $extra);
-    padding-top: rem(6);
+    @include font(100, 80, 0, $semi);
+    padding-top: rem(16);
     white-space: nowrap;
 
     @include mq("md") {
@@ -233,7 +237,7 @@
 
 .fv__desc {
     @include font(30, 45, null, $bold);
-    padding-top: rem(30);
+    padding-top: rem(16);
 
     @include mq("md") {
         @include font(14, 22);
@@ -261,7 +265,7 @@
 }
 
 .fv__message-strong {
-    @include font(60, 78, null, $extra);
+    @include font(60, 78, null, $semi);
 
     @include mq("md") {
         @include font(30, 40);
@@ -277,19 +281,20 @@
     align-items: center;
     background-color: rgba($white, 0.92);
     border: 2px solid #71AF48;
-    border-radius: rem(16);
+    border-radius: rem(999);
     padding: rem(14) rem(30);
     width: fit-content;
     margin-top: rem(32);
 
     @include mq("md") {
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: rem(12);
+        align-items: center;
+        justify-content: space-between;
         left: $padding-sp;
         bottom: rem(20);
-        border-radius: rem(16);
-        padding: rem(14) rem(18);
+        width: calc(100vw - #{$padding-sp} * 2);
+        max-width: rem(450);
+        border-radius: rem(999);
+        padding: rem(10) rem(12);
     }
 }
 
@@ -299,6 +304,8 @@
     column-gap: rem(12);
     padding-right: rem(24);
     padding-left: rem(24);
+    cursor: pointer;
+    text-decoration: none;
 
     &:first-child {
         padding-left: 0;
@@ -309,15 +316,16 @@
     }
 
     &+& {
-        border-left: 1px solid rgba($green, 0.4);
+        border-left: 1px solid rgba($green, 0.7);
     }
 
     @include mq("md") {
-        padding: 0;
-        column-gap: rem(8);
+        padding-right: rem(11);
+        padding-left: rem(11);
+        column-gap: rem(6);
 
         &+& {
-            border-left: none;
+            border-left: 1px solid rgba($green, 0.7);
         }
     }
 }
@@ -328,7 +336,7 @@
     width: auto;
 
     @include mq("md") {
-        height: rem(20);
+        height: rem(16);
     }
 }
 
@@ -336,9 +344,9 @@
     @include font(11, 16, null, $medium);
     white-space: nowrap;
     color: $black;
-
+    text-decoration: none;
     @include mq("md") {
-        @include font(12, 18);
+        @include font(10, 15, -10);
     }
 }
 
@@ -347,8 +355,8 @@
 --------------------------------*/
 .fv__contact {
     position: fixed;
-    right: rem(20);
-    bottom: rem(20);
+    right: 0;
+    bottom: 0;
     z-index: 3;
     display: flex;
     align-items: center;
@@ -356,17 +364,24 @@
     width: rem(95);
     height: rem(95);
     background: linear-gradient(to bottom, #75b249, #227db6);
-    border-radius: rem(15);
+    border-radius: rem(15) 0 0 0;
     color: $white;
     text-align: center;
     text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 
-    &.is-loaded {
-        transition: opacity 0.3s ease;
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition-delay: 0s;
+    }
 
-        &:hover {
-            opacity: 0.7;
-        }
+    &.is-loaded:hover {
+        opacity: 0.7;
     }
 
     span {
@@ -374,12 +389,12 @@
     }
 
     @include mq("md") {
-        width: rem(88);
-        height: rem(88);
-        border-radius: rem(10);
+        width: rem(80);
+        height: rem(80);
+        border-radius: rem(20) 0 0 0;
 
         span {
-            @include font(24, 28);
+            @include font(30, 35);
         }
     }
 }

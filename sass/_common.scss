@@ -26,10 +26,19 @@
   @include mq("md") {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: flex-end;
     column-gap: rem(12);
-    row-gap: rem(12);
+    row-gap: rem(5);
     padding-right: $padding-sp;
     padding-left: $padding-sp;
+  }
+}
+
+.break-sp {
+  display: none;
+
+  @include mq("md") {
+    display: block;
   }
 }
 
@@ -90,6 +99,7 @@
 margin-bottom: rem(-20);
   @include mq("md") {
     @include font(24, 29);
+    margin-bottom: initial;
   }
 }
 
@@ -129,8 +139,11 @@ margin-bottom: rem(-20);
   border-top: 1px solid currentColor;
     margin-bottom: rem(-28);
   @include mq("md") {
+    width: 100% !important;
     grid-column: 1 / -1;
     grid-row: 2;
+    margin-top: rem(-10);
+    margin-bottom: 0;
   }
 }
 
@@ -166,6 +179,7 @@ margin-bottom: rem(-20);
     @include font(17, 28);
     grid-column: 1 / -1;
     grid-row: 3;
+    text-align: right;
   }
 }
 

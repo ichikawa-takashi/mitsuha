@@ -19,17 +19,17 @@
     }
 }
 
+.site-footer__nav {
+    @include mq("md") {
+        display: none;
+    }
+}
+
 .site-footer__nav-list {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     column-gap: rem(30);
-
-    @include mq("md") {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: rem(18) rem(12);
-    }
 }
 
 .site-footer__nav-link {
